@@ -1,0 +1,1207 @@
+:root {
+  --main-color: #0b9586;
+  --h2-color: #101828;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #101828;
+}
+
+.common {
+  padding: 12px 34px;
+  border-radius: 109px;
+  background-color: #ffbb1c;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 8%;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0px 4px 30px 0px #0000000d;
+}
+.card .img {
+  width: 100%;
+}
+.card .img img {
+  width: 100%;
+}
+.card .cardText {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card h4 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #101828;
+}
+.card p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #475467;
+}
+.card .link p {
+  color: #3cab90;
+}
+.card .link a {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.text {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.transverseSection {
+  padding: 80px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.transverseSection .up {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 75%;
+}
+.transverseSection .up h2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+}
+.transverseSection .up p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #475467;
+}
+.transverseSection .down {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.transverseSection .down .card {
+  width: 32%;
+}
+.transverseSection .down .card .link p {
+  color: #3cab90;
+}
+
+.transverseBar {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding-right: 150px;
+  padding-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.transverseBar .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 32px;
+  text-align: start;
+  width: 60%;
+  min-width: 678px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.transverseBar .text h2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: start;
+  color: white;
+}
+.transverseBar .text p {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+/*homePage*/
+.homePage {
+}
+.homePage .nav {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 16px 150px;
+  background-color: var(--main-color);
+}
+.homePage .nav .logo {
+  min-width: 157px;
+  height: 54px;
+}
+.homePage .nav .logo img {
+  height: 100%;
+}
+.homePage .nav .right {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.homePage .nav .right ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.homePage .nav .right ul li {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 28px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.94px;
+}
+.activeList {
+  background-color: #0000000f;
+  border-radius: 5px;
+  border-bottom-width: 3px;
+  border-bottom: 3px solid #0000004d;
+}
+.homePage .nav .right ul li:hover {
+  background-color: #0000000f;
+  border-radius: 5px;
+  border-bottom-width: 3px;
+  border-bottom: 3px solid #0000004d;
+  transition: all 0.1s ease-in-out;
+}
+.homePage .nav .right .number {
+  width: auto;
+  min-width: 16%;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 8px;
+}
+.homePage .nav .right .number span {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.94px;
+}
+.homePage .nav .right .number p {
+  width: 100%;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.94px;
+}
+.homePage .nav .media {
+  display: none;
+  cursor: pointer;
+  font-size: 32px;
+}
+.homePage .HomeImg {
+  width: 100%;
+  height: 650px;
+  background-image: url("./material/solar-panels-meadow\ 1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0 150px;
+}
+.homePage .HomeImg .up {
+  width: 330px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.homePage .HomeImg .up span {
+  font-family: Akazan;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.94px;
+  color: white;
+}
+progress {
+  appearance: none;
+  width: 220px;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+progress::-webkit-progress-bar {
+  background-color: gray;
+  border-radius: 5px;
+}
+progress::-webkit-progress-value {
+  background-color: white;
+  border-radius: 5px;
+}
+progress::-moz-progress-bar {
+  background-color: white;
+  border-radius: 5px;
+}
+.homePage .HomeImg .text {
+  width: 60%;
+  min-width: 740px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+}
+.homePage .HomeImg .text h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+.homePage .HomeImg .text p {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.homePage .HomeImg .text .buttonContainer {
+  width: 80%;
+  display: flex;
+  gap: 24px;
+  padding-top: 32px;
+}
+.homePage .HomeImg .text .buttonContainer .left {
+  padding: 12px 34px;
+  border-radius: 109px;
+  background-color: #3cab90;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+/*homePage*/
+
+/*secondPage*/
+.secondPage {
+  display: flex;
+  padding: 80px 150px;
+  justify-content: space-between;
+}
+.secondPage .left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.secondPage .left .up {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.secondPage .left .up h2 {
+  text-align: left;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+.secondPage .left .up p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #475467;
+}
+.secondPage .left .down {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.secondPage .left .down p {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #101828;
+}
+.secondPage .left .down p span {
+  color: #84bd3a;
+}
+.secondPage .right {
+  width: 45%;
+  position: relative;
+  text-align: end;
+}
+.secondPage .right img {
+  width: 470px;
+  height: 552px;
+}
+.secondPage .right .row {
+  position: absolute;
+  top: calc(96% - 208px);
+}
+.secondPage .right .row img {
+  width: 266px;
+  height: 208px;
+}
+/*secondPage*/
+
+/*thirdPage*/
+.thirdPage {
+  background-image: url("./material/8116\ 1.png");
+}
+.thirdPage .text .common {
+  width: 173px;
+}
+/*thirdPage*/
+
+/*forthPage*/
+/*forthPage*/
+
+/*fifthPage*/
+.fifthPage {
+  background-image: url("./material/8116\ 1\ \(1\).png");
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifthPage .text {
+  border-radius: 12px;
+  padding: 44px;
+  background-color: #00000091;
+  backdrop-filter: blur(24px);
+  text-align: center;
+  width: 70%;
+}
+.fifthPage .text h2 {
+  text-align: center;
+}
+/*fifthPage*/
+
+/*sixthPage*/
+.sixthPage {
+  padding: 80px 150px;
+  background-color: #ffbb1c0d;
+  display: flex;
+  gap: 32px;
+}
+.column {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sixthPage .up {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+.sixthPage .up img {
+  width: 56px;
+  height: 56px;
+}
+.sixthPage h2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: left;
+}
+.sixthPage p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #475467;
+}
+.sixthPage .card {
+  background-color: #3cab900d;
+  border: 1px solid #3cab90;
+  box-shadow: 0px 4px 30px 0px #0000000d;
+  gap: 32px;
+  border-radius: 12px;
+  padding: 24px;
+}
+.sixthPage .card .cardText {
+  gap: 8px;
+}
+.sixthPage .card .cardText,
+.seventhPage .card .cardText {
+  padding: 0;
+}
+/*sixthPage*/
+
+/*seventhPage*/
+.seventhPage .card {
+  gap: 20px;
+  padding: 32px;
+  background-color: #3cab900d;
+  border: 1px solid #3cab90;
+  border-radius: 12px;
+}
+.seventhPage .card img {
+  width: 70px;
+  height: 70px;
+}
+/*seventhPage*/
+
+/*eighthPage*/
+.eighthPage {
+  padding: 80px 150px;
+  display: flex;
+  gap: 32px;
+}
+.eighthPage .left {
+  width: 32%;
+}
+.eighthPage .left .text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+.eighthPage .left .text .up {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.eighthPage .left .text .up img {
+  width: 60px;
+  height: 50px;
+}
+.eighthPage .left .text h2 {
+  text-align: start;
+}
+.eighthPage .left .text p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #1c1c1c;
+}
+.eighthPage .right {
+  background-color: #3cab900f;
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+  border-radius: 24px;
+  padding: 40px;
+  width: 68%;
+}
+.eighthPage .right .up {
+  display: flex;
+  justify-content: space-between;
+}
+.eighthPage .right .up .text {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  width: 72%;
+}
+.eighthPage .right .up .text span {
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3cab90;
+}
+.eighthPage .right .up .text p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #101828;
+}
+.eighthPage .right .up img {
+  width: 72px;
+  height: 8px;
+}
+.eighthPage .right .down {
+  display: flex;
+  justify-content: space-between;
+}
+.eighthPage .right .down .leftDown {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+  width: 50%;
+  color: #1c1c1c;
+}
+.eighthPage .right .down .text {
+  gap: 9px;
+  width: auto;
+}
+.eighthPage .right .down .leftDown span {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.eighthPage .right .down .leftDown p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.eighthPage .right .down .rightDown {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  font-size: 48px;
+}
+.eighthPage .right .down .rightDown i {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+/*eighthPage*/
+
+/*footer*/
+footer {
+  padding: 80px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  background-color: #283646;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .top .leftFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  width: 45%;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+footer .top ul {
+  min-width: 437px;
+}
+footer .top .leftFooter ul li a:hover {
+  color: var(--main-color);
+}
+footer .top .rightFooter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .top .rightFooter form {
+  display: flex;
+  position: relative;
+}
+footer .top .rightFooter form input[type="text"],
+input[type="text"]:focus {
+  width: 406px;
+  height: 48px;
+  border-radius: 38px;
+  padding-left: 20px;
+  border-width: 1px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: white;
+  outline: none;
+  border: 1px solid #b3bdc7;
+  background-color: #92989f;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+footer .top .rightFooter form .common {
+  width: 147px;
+  height: 48px;
+  border-radius: 109px;
+  padding-top: 12px 34px;
+  position: absolute;
+  left: 70%;
+  color: white;
+}
+footer .middel {
+  height: 2px;
+  background-color: #71777d;
+}
+footer .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom p,
+span {
+  display: inline-block;
+  margin-right: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.26px;
+  color: #92989f;
+}
+/*footer*/
+
+/*media query*/
+@media (max-width: 1285px) {
+  .secondPage .left {
+    width: 100%;
+  }
+  .secondPage .right {
+    display: none;
+  }
+  .sixthPage {
+    flex-wrap: wrap;
+  }
+  .sixthPage .text {
+    width: 100%;
+  }
+  .sixthPage .column {
+    width: 100%;
+    flex-direction: row;
+  }
+  .eighthPage {
+    padding: 60px 80px;
+  }
+  .eighthPage .right {
+    gap: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .homePage .nav {
+    padding: 16px 80px;
+  }
+  .transverseSection {
+    padding: 60px 80px;
+    gap: 32px;
+  }
+  .transverseSection .up {
+    width: 85%;
+    gap: 20px;
+  }
+  .transverseSection .up h2 {
+    font-size: 36px;
+    line-height: 110%;
+  }
+  .transverseSection .up p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .transverseSection .down {
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .transverseSection .down .card {
+    width: 48%;
+  }
+  footer {
+    padding: 60px 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .homePage .nav .media {
+    display: block;
+  }
+  .homePage .nav {
+    position: relative;
+  }
+  .homePage .nav .right {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: var(--main-color);
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    top: 100%;
+    gap: 16px;
+    padding: 16px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .homePage .nav .right.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+  .homePage .nav .right ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .homePage .nav .right ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .homePage .nav .right .number {
+    text-align: center;
+  }
+  .homePage .HomeImg {
+    padding: 0 80px;
+  }
+  .homePage .HomeImg .text {
+    width: 100%;
+    min-width: auto;
+    gap: 20px;
+  }
+  .homePage .HomeImg .text h1 {
+    font-size: 42px;
+    line-height: 110%;
+  }
+  .homePage .HomeImg .text p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .secondPage {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .secondPage .left .up h2 {
+    font-size: 36px;
+    line-height: 110%;
+  }
+  .secondPage .left .up p,
+  .secondPage .left .down p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .transverseBar {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .transverseBar .text {
+    width: 80%;
+    gap: 24px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-width: 486px;
+  }
+  .transverseBar .text h2 {
+    font-size: 36px;
+    line-height: 110%;
+  }
+  .transverseBar .text p {
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .transverseSection {
+    padding: auto 150px;
+  }
+  .fifthPage {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .fifthPage .text {
+    width: 90%;
+    min-width: 550px;
+    padding: 32px;
+  }
+  .fifthPage .text h2 {
+    font-size: 36px;
+    line-height: 110%;
+  }
+  .fifthPage .text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .sixthPage {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .sixthPage .card .cardText,
+  .seventhPage .card .cardText {
+    padding: 0;
+  }
+  .seventhPage {
+    padding: 60px 80px;
+    gap: 32px;
+  }
+  .eighthPage {
+    padding: 60px 40px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .eighthPage .left {
+    width: 100%;
+  }
+  .eighthPage .left .text {
+    gap: 20px;
+  }
+  .eighthPage .left .text h2 {
+    font-size: 36px;
+    line-height: 110%;
+  }
+  .eighthPage .left .text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .eighthPage .right {
+    width: 100%;
+    gap: 40px;
+    padding: 32px;
+  }
+  .eighthPage .right .up {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .eighthPage .right .up .text {
+    width: 100%;
+    gap: 16px;
+  }
+  .eighthPage .right .down {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .eighthPage .right .down .leftDown {
+    width: 100%;
+  }
+  .eighthPage .right .down .rightDown {
+    justify-content: flex-end;
+  }
+  footer {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+  footer .top {
+    flex-direction: column;
+    gap: 32px;
+  }
+  footer .top .leftFooter {
+    width: 100%;
+    gap: 24px;
+  }
+  footer .top ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  footer .top .rightFooter {
+    width: 100%;
+  }
+  footer .top .rightFooter form input[type="text"] {
+    width: 100%;
+  }
+  footer .top .rightFooter form .common {
+    left: auto;
+    right: 0;
+  }
+  footer .bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .transverseSection .down .card,
+  .sixthPage .card {
+    width: 100%;
+  }
+  .sixthPage .column {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .homePage .nav {
+    padding: 16px 24px;
+  }
+  .homePage .HomeImg {
+    padding: 0 24px;
+    height: 560px;
+  }
+  .homePage .HomeImg .text {
+    width: 90%;
+    min-width: auto;
+    gap: 16px;
+    margin: 0;
+  }
+  .homePage .HomeImg .text h1 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .homePage .HomeImg .text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homePage .HomeImg .text .buttonContainer {
+    width: 50%;
+    flex-direction: column;
+  }
+  .homePage .HomeImg .text .buttonContainer .left,
+  .common {
+    min-width: 200px;
+  }
+  .secondPage {
+    padding: 40px 24px;
+  }
+  .secondPage .left .up h2 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .secondPage .left .up p,
+  .secondPage .left .down p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .transverseBar {
+    padding: 0px 24px;
+  }
+  .transverseBar .text {
+    width: 90%;
+    gap: 16px;
+    margin: 0;
+    min-width: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .transverseBar .text h2 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .transverseBar .text p {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .transverseSection {
+    padding: 40px 24px;
+    gap: 24px;
+  }
+  .transverseSection .card .cardText {
+    padding: 20px;
+  }
+  .transverseSection .up {
+    width: 100%;
+    gap: 16px;
+  }
+  .transverseSection .up h2 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .transverseSection .up p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .transverseSection .down {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .fifthPage {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-size: cover;
+  }
+  .fifthPage .text {
+    width: 90%;
+    padding: 16px;
+  }
+  .fifthPage .text h2 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .fifthPage .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .sixthPage {
+    padding: 40px 24px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .sixthPage .text {
+    width: 100%;
+    gap: 12px;
+  }
+  .sixthPage .text h2 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .sixthPage .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .sixthPage .column {
+    width: 100%;
+    gap: 12px;
+  }
+  .sixthPage .card,
+  .seventhPage .card {
+    padding: 16px;
+    gap: 12px;
+  }
+  .sixthPage .card .cardText,
+  .seventhPage .card .cardText {
+    padding: 0;
+  }
+  .seventhPage {
+    padding: 40px 24px;
+    gap: 24px;
+  }
+  .seventhPage .card {
+    gap: 8px;
+  }
+  .eighthPage {
+    padding: 40px 24px;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .eighthPage .left {
+    width: 100%;
+  }
+  .eighthPage .left .text {
+    gap: 12px;
+  }
+  .eighthPage .left .text h2 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .eighthPage .left .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .eighthPage .right {
+    width: 100%;
+    gap: 24px;
+    padding: 24px;
+  }
+  .eighthPage .right .up {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .eighthPage .right .up .text {
+    width: 100%;
+    gap: 12px;
+  }
+  .eighthPage .right .down {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .eighthPage .right .down .leftDown {
+    margin-top: 24px;
+    width: 100%;
+  }
+  .eighthPage .right .down .rightDown {
+    gap: 12px;
+  }
+  footer {
+    padding: 40px 24px;
+    gap: 24px;
+  }
+  footer .top {
+    gap: 24px;
+  }
+  footer .top .leftFooter {
+    gap: 16px;
+  }
+  footer .top ul {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+  footer .bottom span {
+    display: none;
+  }
+  footer .bottom ul {
+    gap: 12px;
+  }
+  footer .bottom {
+    gap: 12px;
+    flex-wrap: nowrap;
+    font-size: 12px;
+  }
+}
+/*media query*/
